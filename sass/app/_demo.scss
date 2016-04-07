@@ -1,0 +1,9 @@
+$fancy-font-family: 'Courgette', cursive;
+
+.best-name {
+    font-family: $fancy-font-family;
+
+    & h1 {
+        font-size: 2rem;
+    }
+}

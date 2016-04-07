@@ -1,0 +1,45 @@
+.ribbon-wrapper {
+    bottom: -1px;
+    height: 88px;
+    left: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 85px;
+}
+
+.ribbon {
+    -webkit-transform: rotate(45deg);
+    background-color: $brand-primary;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($light-primary), to($brand-primary)); 
+    background-image: -webkit-linear-gradient(top, $light-primary, $brand-primary);
+    background-image: linear-gradient(top, $light-primary, $brand-primary);
+    bottom: -61px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    color: $dark-gray;
+    font-family: $base-font-family;
+    font-size: 10px;
+    font-weight: bold;
+    left: -18px;
+    padding: 4px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.3) 0px 1px 0px;
+    transform: rotate(45deg);
+    width: 70px;
+}
+
+.ribbon:before, .ribbon:after {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid $dark-primary;
+    bottom: -3px;
+    content: "";
+    position:absolute;
+}
+
+.ribbon:before {
+    left: 0;
+}
+.ribbon-:after {
+    right: 0;
+}

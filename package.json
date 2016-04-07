@@ -1,0 +1,18 @@
+{
+  "name": "silqe",
+  "version": "1.0.0",
+  "description": "`make development`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.silqe.com:silqe/SilqeVehikl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "select2": "^4.0.2-rc.1"
+  }
+}

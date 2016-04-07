@@ -1,15 +1,31 @@
-# BEST
+# Vehikl BEST
+A stripped down grid, based on [Bourbon's]('http://bourbon.io/') [Neat]('http://neat.bourbon.io/') grid. Naming conventions and architecture based on modern CSS frameworks (e.g. `twelve-columns`).
 
-A stripped down grid and a collection of components.
+Styles, variables, and structure based on [Bitters]('http://bitters.bourbon.io/'). Custom functionality components based on [Refills]('http://refills.bourbon.io/').
 
-## Sass & Compass
+## Requirements
+- [Sass]('http://sass-lang.com/')
 
-- watch for changes
-`compass watch`
+  `gem install sass`
 
-- compile into css
-`compass compile`
+## Get Started
 
-## Plug-ins
+### Serve
+To serve project.
 
-Susy - responsive grid
+`make serve`
+
+### CSS
+To watch and compile CSS.
+
+`make css`
+
+### Project set up from scratch
+Will reinstall all CSS dependencies from Bourbon.
+
+`make development`
+
+## Recommendations
+- [.scss lint]('https://github.com/vehikl/garage/blob/master/project_templates/.scss-lint.yml')
+
+  Vehikl requirements for linting .scss

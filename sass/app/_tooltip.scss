@@ -1,0 +1,49 @@
+.tooltip-item {
+    position: relative;
+    text-align: center;
+
+    &:focus,
+    &:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        transition: all 200ms ease-in-out;
+    }
+
+    .tooltip {
+        @include position(absolute, null 0 3em -12px);
+        @include transition (all 0.2s ease-in-out);
+        background-color: $white;
+        background: #fff;
+        border-radius: $base-border-radius;
+        box-shadow: 0 2px 2px $light-gray;
+        color: $base-font-color;
+        font-size: 0.6em;
+        line-height: 1.5em;
+        margin: 0 auto;
+        opacity: 0;
+        padding: .3em 0em;
+        text-align: center;
+        width: 50px;
+        visibility: hidden;
+        z-index: 10;
+
+        p {
+            color: lighten($base-font-color, 20%);
+            line-height: $base-line-height;
+            margin: 0;
+        }
+
+        &:after {
+            @include position(absolute, null 0 null 5px);
+            border: 8px solid transparent;
+            bottom: -1.3em;
+            color: $white;
+            content: '▼';
+            font-size: 1.4em;
+            margin-left: -8px;
+            text-align: center;
+            text-shadow: $medium-gray;
+        }
+    }
+
+}

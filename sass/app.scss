@@ -1,0 +1,45 @@
+@import "app/style-guide";
+@import "app/behaviors";
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+@import "app/typography";
+@import "app/buttons";
+@import "app/app-forms";
+@import "app/navigation";
+@import "app/tooltip";
+@import "app/modal";
+@import "app/ribbon";
+@import "app/demo";
+
+// App elements
+
+.logo {
+    background-color: $light-primary;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    height: 65px;
+    opacity: 1;
+    transition: background-image 100ms, opacity 200ms linear;
+
+    &.full {
+        background-image: $full-logo;
+        background-position: 50%;
+    }
+
+    &.avatar {
+        background-image: $avatar-logo;
+        background-position: center;
+    }
+}
+
+.body-container {
+    padding: $base-spacing;
+    width: calc(100% - $sidebar); //accommodating for full sidebar
+    margin-left: $sidebar; // width of full sidebar
+
+    &.expand-body {
+        width: calc(100% - $small-sidebar); // accommodating for collapsed sidebar
+        margin-left: $small-sidebar; // width of collapsed sidebar
+    }
+}
