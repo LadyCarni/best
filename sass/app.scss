@@ -13,6 +13,10 @@
 @import "app/demo";
 
 // App elements
+body,
+html {
+    -webkit-font-smoothing: antialiased;
+}
 
 .logo {
     background-color: $light-primary;
@@ -21,16 +25,6 @@
     height: 65px;
     opacity: 1;
     transition: background-image 100ms, opacity 200ms linear;
-
-    &.full {
-        background-image: $full-logo;
-        background-position: 50%;
-    }
-
-    &.avatar {
-        background-image: $avatar-logo;
-        background-position: center;
-    }
 }
 
 .body-container {

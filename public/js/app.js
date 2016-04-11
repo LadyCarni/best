@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.logo').toggleClass("avatar");
         $('#sidebar-toggle').toggleClass("expand");
         $('nav').toggleClass("collapse");
-        $('.toggle-icon').toggleClass("rotate");
+        $('.rotate').toggleClass("rotated");
         $('.welcome').toggleClass("hidden");
         $('.body-container').toggleClass("expand-body");
     });

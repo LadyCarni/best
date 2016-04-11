@@ -1,9 +1,39 @@
-$fancy-font-family: 'Courgette', cursive;
+// Demo logo
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.best-name {
-    font-family: $fancy-font-family;
+    svg {
+        fill: $white;
+    }
 
-    & h1 {
-        font-size: 2rem;
+    &.full {
+        svg {
+            height: 80%;
+        }
+    }
+
+    &.avatar {
+        svg {
+            width: 85%;
+        }
+
+    }
+}
+
+.header-logo {
+    height: 140px;
+    margin-bottom: 2em;
+
+    svg {
+        fill: $brand-primary;
+        height: 70%;
+    }
+
+    p {
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 0;
     }
 }
