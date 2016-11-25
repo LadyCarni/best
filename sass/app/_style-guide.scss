@@ -22,8 +22,13 @@ $base-z-index: 0;
 // Brand colors
 $brand-primary: #01b5dd;
 $light-primary: rgba($brand-primary, .3);
+$medium-primary: #5abcd2;
+$opaque-primary: rgba($brand-primary, .1);
 $dark-primary: darken($brand-primary, 10%);
-$brand-secondary: #b0db64;
+$brand-secondary: #cea8ff;
+$light-secondary: lighten($brand-secondary, 5%);
+$medium-secondary: #c496ff;
+$dark-secondary: darken($brand-secondary, 8%);
 $brand-tertiary: #404040;
 
 // UI colors

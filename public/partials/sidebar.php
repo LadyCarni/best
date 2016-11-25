@@ -1,12 +1,12 @@
 <aside>
-    <div class="logo full">
+    <a class="logo full" href="/">
         <?php echo file_get_contents("public/images/best.svg"); ?>
-    </div>
+    </a>
     <nav>
         <div class="nav-item">
-            <a href="#">
+            <a href="helpers.php">
                 <i class="fa fa-fighter-jet"></i>
-                <span class="label">Fighter Jets</span>
+                <span class="label">Helper Classes</span>
             </a>
         </div>
         <div class="nav-item">
